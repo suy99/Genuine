@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
+//main operation start here
 /* GET users listing. */
 router.post('/', function (req, res, next) {
   var firstnamevar = req.query.firstname;
@@ -18,7 +19,7 @@ router.post('/', function (req, res, next) {
     res.send(JSON.stringify({
       "status": 200,
       "error": null,
-      "response": 'user successfully created!',
+      "response": 'user successfully created!, please check in database',
       "last_insert_id": results.insertId
     }));
   });
