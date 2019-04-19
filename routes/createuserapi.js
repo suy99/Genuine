@@ -19,7 +19,7 @@ router.post('/', function (req, res, next) {
     if (error) throw error;
     res.send(JSON.stringify({
       "status": 200,
-      "error": null,
+      //"error": null,
       "response": 'user successfully created!, please check in database',
       "last_insert_id": results.insertId
     }));
